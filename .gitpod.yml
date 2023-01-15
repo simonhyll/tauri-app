@@ -5,5 +5,5 @@ ports:
 tasks:
   - init: |
       pnpm install
-      cargo build
+      pnpm tauri build --debug
     command: pnpm tauri dev
