@@ -3,4 +3,5 @@ image:
 ports:
   - port: 6080
 tasks:
-  - command: "pnpm install && pnpm tauri dev"
+  - init: pnpm install
+    command: pnpm tauri dev
