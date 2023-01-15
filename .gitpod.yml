@@ -3,5 +3,7 @@ image:
 ports:
   - port: 6080
 tasks:
-  - init: pnpm install
+  - init: |
+      pnpm install
+      cargo build
     command: pnpm tauri dev
