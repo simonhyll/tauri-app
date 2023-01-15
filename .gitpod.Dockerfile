@@ -9,7 +9,5 @@ RUN apt update && \
     libgtk-3-dev \
     libayatana-appindicator3-dev \
     librsvg2-dev && \
-    npm i -g pnpm && \
-    pnpm install && \
-    pnpm tauri build --debug
+    npm i -g pnpm
 USER gitpod
