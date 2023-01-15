@@ -8,8 +8,10 @@ RUN apt update && \
         libssl-dev \
         libgtk-3-dev \
         libsoup2.4-dev \
-        libjavascriptcoregtk-4.0-dev \
+        libjavascriptcoregtk-3.0-dev \
         libayatana-appindicator3-dev \
         librsvg2-dev && \
-    npm i -g pnpm
+    npm i -g pnpm && \
+    pnpm install && \
+    pnpm tauri build --debug
 USER gitpod

@@ -3,4 +3,4 @@ image:
 ports:
   - port: 6080
 tasks:
-  - command: "pnpm tauri build --debug"
+  - command: "pnpm tauri dev"
